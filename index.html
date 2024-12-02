@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Olá mundo</title>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 60px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
 
-<h1>Meu nome é</h1>
-<h3>Sibele de Albuquerque Pedroso</h3>
-<h2>Universidade Estadual de Ponta Grossa</h2>
-<p>Talento Tech.</p>
+
+<header>
+  <h2>Santa Maria Do Oeste</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Santa Maria Do Oeste</a></li>
+      <li><a href="#">Paraná</a></li>
+      <li><a href="#">Brasil</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Santa Maria Do Oeste</h1>
+    <p>Santa Maria do Oeste é um município brasileiro do estado do Paraná. Sua população estimada em 2004 era de 13.705 habitantes.
+Apresenta altitude de 1.049 metros e área terrestre 845,530 km². Seu território foi desmembrado do município de Pitanga em 11 de julho de 1990 e instalado em 1 de janeiro de 1993.</p>
+    <p>A história de Santa Maria do Oeste está sendo registrada pelo Sr. Amilton Schreiner, que através de pesquisas e entrevistas com antigos moradores conseguiu resgatar fatos importantes da história local. O resumo apresentado se baseia nas informações por ele disponibilizadas.
+
+As primeiras referências datam de 1911, quando os irmãos Laurindo e Rosendo Pereira, adquiriram uma área de terras de 714 alqueires, junto ao governo do Estado, com títulos definitivos de posse e provavelmente com o objetivo de cultivar as terras. A região era conhecida como Campina dos Pereira, numa alusão à família pioneira. Mais tarde Laurindo Pereira vendeu sua parte de terras a Manoel Pereira, que optou por enviar João Romão de Carvalho e Sebastião Vitoriano gonçalves da luz, para administrarem a propriedade adquirida.
+
+Em 18 de dezembro de 1920 chegou à região a família de Francisco Mendes Teixeira, conhecido como Chico Velho, apelido esse que o diferenciava de seu filho Francisco Teixeira dos Santos, que ficou conhecido por Chico Novo.
+
+Chico Velho adquiriu a gleba de terras de Manoel Pereira, que nunca morou na região, e a dividiu em pequenas chácaras e lotes. A partir daí passou a vendê-las às famílias de imigrantes europeus, que chegavam ao local em busca de terras para criar gado, suínos e cultivar o solo.
+
+No final de 1920, Chico Novo, pôs-se a construir a primeira igreja do local, ao lado do cemitério, sendo ajudado por Vergílio Martins de Moraes. Quando ficou pronta, o padre Paulo Schorn, da paróquia Nossa Senhora de Belém, de Guarapuava, vinha celebrar missa regularmente. Outra iniciativa de Chico Novo foi a implantação da primeira casa comercial do povoado, que abastecia toda comunidade e aos fazendeiros da região.
+
+A partir desta época a localidade passou a ser conhecida por Campina de Santa Maria, em homenagem à Imaculada Conceição, cuja data comemorativa é 8 de Dezembro, data em que a família Teixeira chegou à região.
+
+Em 1932 Bernardino Grande chegou à região e adquiriu a bodega do Sr. Amalio Cardoso de Mello, comprando também uma área de terras provavelmente de Chico Velho, para criação de porcos em sistema de safras. A primeira tropa de suínos registrada foi encaminhada em 1934, para Ponta Grossa, por Bernardino Grande, iniciando então a exportação da produção local para outras praças. Estas tropas eram conduzidas a pé e a viagem durava em torno de um mês, dependendo do clima, pois o calor excessivo castigava os animais.
+
+Coincide com esta data, 1934, a adoção de carretões para transporte de cargas, de erva mate, feijão, cera e outros produtos, feitos por Reinaldo e Leopoldo Krüeger, juntamente com Alcindino Rosa, José Ulchak e Jorge Rother. Em 1937 foi fundada a primeira escola particular na localidade, e as primeiras aulas dadas pelo professor Leonildes Cordeiro e pela professora Adelaide Bueze. Somente dois anos após (em 1939) foi criada a primeira escola pública.
+
+A agricultura até 1940 era quase que somente para consumo interno, a partir de então começou a ter alguma importância comercial. Data desta época o surgimento das culturas de trigo e centeio. João Golanoski montou a primeira trilhadeira com tração animal, utilizada para bater os feixes de trigo. Na década de 1950, Bernardino Grande, vendeu à prefeitura municipal de Pitanga uma área de 5 alqueires para que fosse implantada a se de do patrimônio.
+
+Em 14 de novembro de 1951, através de Lei Estadual nº 790, foi criado o Distrito Policial de Santa Maria, com território pertencente ao município de Pitanga. Pela lei nº 29 de 22 de maio de 1979, o núcleo foi elevado à categoria de Distrito Administrativo. Em 11 de julho de 1990, devidos aos esforço de lideranças locais, onde pode-se destacar o próprio Sr. Amilton Schreiner, pioneiro (nascido na própria região em 1929), foi alcançada a emancipação municipal por meio da Lei Estadual 9.320, onde se alterou a denominação local, passando a se chamar Santa Maria do Oeste. A instalação oficial deu-se em 1 de janeiro e 1993, quando tomou posse o primeiro prefeito, Evaldo Leal.</p>
+  </article>
+</section>
+
 
 </body>
 </html>
